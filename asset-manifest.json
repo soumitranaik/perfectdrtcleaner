@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/perfectdrtcleaner/static/css/main.4c737383.css",
+    "main.js": "/perfectdrtcleaner/static/js/main.feeb711f.js",
+    "static/media/drycleaning-banner.jpg": "/perfectdrtcleaner/static/media/drycleaning-banner.d0a407bce6d2373dc340.jpg",
+    "static/media/home.jpg": "/perfectdrtcleaner/static/media/home.8d8687df707dc4242267.jpg",
+    "static/media/portfolio6.jpg": "/perfectdrtcleaner/static/media/portfolio6.749786320fa44a303854.jpg",
+    "static/media/portfolio7.jpg": "/perfectdrtcleaner/static/media/portfolio7.ca1730b193408e3a50f3.jpg",
+    "static/media/portfolio3.jpg": "/perfectdrtcleaner/static/media/portfolio3.4ee82684bf08e2f82bff.jpg",
+    "static/media/portfolio8.jpg": "/perfectdrtcleaner/static/media/portfolio8.5db2bfd73b1141b84b67.jpg",
+    "static/media/portfolio5.jpg": "/perfectdrtcleaner/static/media/portfolio5.df81975fe35445aef3b8.jpg",
+    "static/media/portfolio2.jpg": "/perfectdrtcleaner/static/media/portfolio2.f04386d74167af04d043.jpg",
+    "static/media/portfolio4.jpg": "/perfectdrtcleaner/static/media/portfolio4.d148ac0000a77f76e765.jpg",
+    "static/media/portfolio1.jpg": "/perfectdrtcleaner/static/media/portfolio1.1bc6b2be474f57a41d6b.jpg",
+    "static/media/logo.png": "/perfectdrtcleaner/static/media/logo.2690bc537fabf622e624.png",
+    "index.html": "/perfectdrtcleaner/index.html",
+    "main.4c737383.css.map": "/perfectdrtcleaner/static/css/main.4c737383.css.map",
+    "main.feeb711f.js.map": "/perfectdrtcleaner/static/js/main.feeb711f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4c737383.css",
+    "static/js/main.feeb711f.js"
+  ]
+}
