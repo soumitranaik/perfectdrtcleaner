@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import Services from './components/Services';
+import { Main } from 'components/Main';
+import React from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import Navbar from 'components/Navbar';
+import DrycleaningServices from 'pages/Drycleaning';
+import ScrollToTop from 'components/ScrollToTop';
+import Footer from 'components/Footer';
+import Portfolio from 'pages/Portfolio';
 
-function App() {
+const App = () => {
+  const location = useLocation(); 
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <motion.div initial="hidden" animate="show">
+        <Navbar />
+        <AnimatePresence mode='wait'>
+          <Routes key={location.pathname} location={location}>
+            <Route  path="/drycleaning" element={<DrycleaningServices />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/" element={<Main />} />
+          </Routes>
+        </AnimatePresence>
+        <ScrollToTop />
+      </motion.div>
+      <Footer />
+    </>
   );
-}
+};
 
 export default App;
