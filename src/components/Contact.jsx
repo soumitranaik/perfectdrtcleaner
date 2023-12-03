@@ -19,26 +19,29 @@ const Contact = () => {
       }}
       >
         <div className="contact__title">
-          <p>Stay in Touch</p>
-          <h2>
-            Quick Contact
-          </h2>
+          
         </div>
         <div className="contact__data">
           <div className="contact__data__description">
+          <p style={{color:'#00c0de', fontWeight:'600'}}>Stay in Touch</p>
+          <h2>
+            Quick Contact
+          </h2>
             <p>If you have any questions simply use the following details</p>
             <p>
             Our friendly team is here to help. Reach out to us easily through our contact page. We look forward to hearing from you!
             </p>
             <div>
               <p>
-              <strong>Address:</strong> 33 street, New Delhi
+              <strong>Address:</strong> No 13/ 8, DDA Shopping Centre,
+Chhoti Subji Mandi, Janakpuri,
+New Delhi, Delhi 110058
               </p>
               <p>
               <strong>Email:</strong> hello@gmail.com
               </p>
               <p>
-              <strong>Phone:</strong> 9883383838
+              <strong>Phone:</strong> +91 98994 16600
               </p>
             </div>
           </div>
@@ -58,7 +61,11 @@ const Section = styled.section`
 min-height: 100vh;
 .contact{
   color: var(--primary-color);
-  margin: 0 18rem;
+  margin-right: 18rem;
+  margin-left: 18rem;
+  height: 100vh;
+  display: flex;
+  align-items: center;
   &__title{
     margin: 6rem 0 2rem 0;
     p{
@@ -102,6 +109,7 @@ min-height: 100vh;
       flex-direction: column;
       align-items: center;
       gap: 2rem;
+      margin-top: 4rem;
       input, textarea{
         text-transform: uppercase;
         border: none;

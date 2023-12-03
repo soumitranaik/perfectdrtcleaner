@@ -5,6 +5,7 @@ import home from '../assets/home.jpg';
 import play from '../assets/play.png';
 import { motion } from "framer-motion";
 import { homeAnimation, homeInfoAnimation } from "animation";
+import Slider from './Slider';
 
 
 function Home() {
@@ -21,8 +22,7 @@ function Home() {
 
   return (
     <Section id="home">
-        
-        <motion.div className="home" 
+      {/*<motion.div className="home" 
         variants={homeAnimation}
         transition={{ delay: 0.3, duration: 0.6, type:"tween"}}
         >
@@ -40,44 +40,42 @@ function Home() {
             </div>
             <img src={play} alt="Play Button" />
           </motion.div>
-        </motion.div>
-        <motion.div className="info"
+  </motion.div>*/}
+  <Slider />
+      <motion.div
+        className="info"
         variants={homeInfoAnimation}
-        transition={{ delay: 0.3, duration: 0.6, type:"tween"}}
-        >
-          <div className="grid">
-            <div className="col">
-              <strong>Address</strong>
-              <p>No 13/ 8, DDA Shopping Centre,<br />Chhoti Subji Mandi, Janakpuri,<br />New Delhi, Delhi 110058</p>
-            </div>
-            <div className="col">
-              <strong>Phone</strong>
-              <p>+91 98994 16600</p>
-            </div>
-            <div className="col">
-              <strong>Email</strong>
-              <p>hello@perfectdrycleaner.in</p>
-            </div>
-            <div className="col">
-              <strong>Timings</strong>
-              <p>Open 24 x 7</p>
-            </div>
-            <div className="col">
-              <strong>Payments</strong>
-              <p>Accepts UPI, Cash, Card</p>
-            </div>
-            <div className="col">
-              <strong>Delivery</strong>
-              <p>Available On-demand</p>
-            </div>
+        transition={{ delay: 0.3, duration: 0.6, type: "tween" }}
+      >
+        <div className="grid">
+          <div className="col">
+            <strong>Phone</strong>
+            <p>+91 98994 16600</p>
           </div>
-        </motion.div>
+          <div className="col">
+            <strong>Address</strong>
+            <p>
+              No 13/ 8, DDA Shopping Centre,
+              <br />
+              Chhoti Subji Mandi, Janakpuri,
+              <br />
+              New Delhi, Delhi 110058
+            </p>
+           
+          </div>
+          <div className="col">
+            <strong>Email</strong>
+            <p>hello@perfectdrycleaner.in</p>
+          </div>
+          
+        </div>
+      </motion.div>
     </Section>
-  )
+  );
 }
 
 const Section = styled.section`
-    background: url(${home}) no-repeat center;
+    /*background: url(${home}) no-repeat center;*/
     min-height: 86vh;
     background-size: cover;
     position: relative;
@@ -108,15 +106,20 @@ const Section = styled.section`
     }
     .info{
       position: absolute;
-      bottom: -6rem;
+      z-index: 100;
+      bottom: -10rem;
       right: 0;
+      left: 0;
+      margin: 0 8rem;
       background-color: var(--secondary-color);
-      padding: 4rem;
+      padding: 3rem;
+      border-bottom: 7px solid #000;
       .grid{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 4rem;
         color: #fff;
+        text-align: center;
       }
     }
     @media (min-width: 1600px) {
@@ -141,7 +144,7 @@ const Section = styled.section`
       }
     }
     .info{
-      position: initial;
+      position: none;
       .grid{
         grid-template-columns: 1fr;
       }

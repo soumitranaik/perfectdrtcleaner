@@ -6,7 +6,9 @@ import Title from './Title';
 import { useScroll } from 'components/useScroll';
 import { blogsAnimation } from 'animation';
 import { motion } from 'framer-motion';
-import drycleaning from '../assets/drycleaning-banner.jpg'
+import drycleaning from '../assets/drycleaning-banner.jpg';
+import coloured from '../assets/coloured.jpg';
+import folded from '../assets/folded.jpg'
 
 const Blog = () => {
   const [element, controls] = useScroll();
@@ -16,7 +18,7 @@ const Blog = () => {
       title: "Laundry Room",
       type: "GUIDE",
       description: "Transform your laundry room into a streamlined and efficient space with our comprehensive guide to laundry room organization. Discover practical tips, storage solutions, and design inspirations that will help you conquer the clutter and make laundry day a breeze. From sorting bins to clever shelving, we've got your laundry room transformation covered",
-      simage: drycleaning
+      simage: folded
     },
     {
       title: "Green Laundry",
@@ -28,7 +30,7 @@ const Blog = () => {
       title: "Stain Removal 101",
       type: "Tackling Laundry Stains",
       description: "Say goodbye to stubborn stains with our comprehensive stain removal guide. We break down the science behind common stains and provide step-by-step instructions for removing them. Whether it's red wine on your favorite shirt or grass stains on your kid's jeans, we've got the solutions to keep your clothes looking pristine.",
-      simage: drycleaning
+      simage: coloured
     }
   ]
   return (
@@ -75,15 +77,21 @@ position: relative;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 3rem;
-  margin: 5rem 15rem;
+  margin-left: 15rem;
+  margin-right: 15rem;
+  height: 100vh;
   .blog{
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
     .image{
       height: 15rem;
       /*background: url(${home}) no-repeat center center;*/
       background-size: cover;
+      width: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -93,6 +101,7 @@ position: relative;
         color: var(--secondary-color);
         font-size: 1.5rem;
         text-transform: uppercase;
+        text-align: left;
       }
       a{
         color: var(--secondary-color);
@@ -103,6 +112,7 @@ position: relative;
       color: var(--primary-color);
         font-weight: bolder;
         text-transform: uppercase;
+        text-align: left;
     }
    
     .more{
@@ -120,10 +130,16 @@ position: relative;
 }
 @media screen and (min-width: 280px) and  (max-width: 1080px){
 margin: 2rem 0;
+height: auto;
 .blogs {
   padding: 0 2rem;
   grid-template-columns: 1fr;
-  margin: 0 1rem;
+  margin: 8rem 1rem;
+  height: auto;
+  .blog{
+    margin-bottom: 4rem;
+  }
+
 }
 }
 `;

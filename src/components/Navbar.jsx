@@ -70,8 +70,8 @@ const Nav = styled(motion.nav)`
   margin: 0 2rem;
   align-items: center;
   color: #fff;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+ /* padding-top: 1rem;
+  padding-bottom: 1rem;*/
   .brand__container{
     margin: 0 2rem;
     .toggle{

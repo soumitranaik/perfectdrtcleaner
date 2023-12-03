@@ -36,39 +36,47 @@ function About() {
   }, [controls, inView]);
 
   return (
-    <Section id="aboutUs" >
+    <Section id="aboutUs">
       <Title value="about us" />
       <div className="about-us">
-        <motion.div
-          className="content"
+        <motion.div className="content">
+          <motion.div
+            className="image"
+            ref={ref}
+            initial="hidden"
+            animate={controls}
+            variants={slideInVariants}
+            transition={slideInTransition}
           >
-          <motion.div className="image" 
-          ref={ref}
-          initial="hidden"
-          animate={controls}
-          variants={slideInVariants}
-          transition={slideInTransition}>
             <img src={aboutUsImage} alt="About Us" />
           </motion.div>
-          <motion.div className="text"
-          ref={ref2}
-          initial="hidden"
-          animate={controls}
-          variants={slideOutVariants}
-          transition={slideInTransition}
+          <motion.div
+            className="text"
+            ref={ref2}
+            initial="hidden"
+            animate={controls}
+            variants={slideOutVariants}
+            transition={slideInTransition}
           >
-            <h2>Perfect Dry Cleaner: Elevating Cleanliness to an Art</h2>
+            <h2>Perfect Dry Cleaner: We Clean, You Should Relax</h2>
             <p>
-            'We Clean, You Should Relax' is not just a slogan; it's a promise. Our team of dedicated professionals specializes in the intricate cleaning of carpets, sofas, curtains, designer dresses, and wedding dresses. When you choose us, you're not just opting for a cleaning service; you're trusting us with your most cherished items, and we take that responsibility seriously.
-
-What sets us apart is our unwavering dedication to providing the best service possible. We go beyond the surface, ensuring that each item receives the care and attention it deserves. It's not just about hygiene; it's about creating an environment that leaves you feeling refreshed and satisfied.
+              'We Clean, You Should Relax' is not just a slogan; it's a promise.
+              Our team of dedicated professionals specializes in the intricate
+              cleaning of carpets, sofas, curtains, designer dresses, and
+              wedding dresses. When you choose us, you're not just opting for a
+              cleaning service; you're trusting us with your most cherished
+              items, and we take that responsibility seriously. What sets us
+              apart is our unwavering dedication to providing the best service
+              possible. We go beyond the surface, ensuring that each item
+              receives the care and attention it deserves. It's not just about
+              hygiene; it's about creating an environment that leaves you
+              feeling refreshed and satisfied.
             </p>
             <div className="more">
-                <motion.img whileHover={{scale: 1.1}} src={play} alt="Play"/>
-                <span>Read More</span>
-              </div>
+              <motion.img whileHover={{ scale: 1.1 }} src={play} alt="Play" />
+              <span>Read More</span>
+            </div>
           </motion.div>
-          
         </motion.div>
       </div>
     </Section>
@@ -81,8 +89,11 @@ const Section = styled.section`
     display: flex;
     align-items: center;
     height: 100%;
-    margin: 0 14rem;
-    margin-top: 10rem;
+    margin-right: 14rem;
+
+    margin-left: 14rem;
+    height: 100vh;
+    /*margin-top: 10rem;*/
     gap: 5rem;
     .content {
       display: flex;
@@ -101,14 +112,14 @@ const Section = styled.section`
         h2 {
           font-size: 3rem;
           line-height: 1;
-          margin-bottom: 5rem;
+          margin-bottom: 3rem;
           color: var(--secondary-color);
         }
         p {
           color: var(--primary-color);
         }
         .more{
-          margin-top: 5rem;
+          margin-top: 3rem;
       display: flex;
       align-items: center;
       gap: 1rem;
@@ -127,18 +138,21 @@ const Section = styled.section`
       padding-top: 5rem;
     }
   }
-  @media screen and (min-width: 280px) and (max-width: 1080px) {
+  @media screen and (min-width: 280px) and (max-width: 680px) {
     .about-us {
       margin: 2rem 0;
-      flex-direction: column;
+      display: block;
       gap: 2rem;
       padding: 0 2rem;
-      &__content {
-        flex-direction: column;
-        text-align: center;
-        &__image,
-        &__text {
+      height: auto;
+      margin: 8rem 0rem;
+      .content {
+        display: block !important;
+        text-align: left;
+        .image,
+        .text {
           width: 100%;
+          margin-bottom: 4rem;
         }
       }
     }

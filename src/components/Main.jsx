@@ -11,6 +11,9 @@ import Skills from './Skills';
 import Services from './Services';
 import Testimonials from './Testimonials';
 import About from './About';
+import Slider from './Slider';
+import Features from './Features';
+import Reviews from './Reviews';
 
 export const Main = () => {
   return (
@@ -20,10 +23,12 @@ export const Main = () => {
         
         <Portfolio />
         <About />
-        <Milestones />
+        
+        <Features />
         <Blog />
         <Video />
-        <Testimonials />
+        <Reviews />
+        
         <Contact />
         
         <ScrollToTop />
