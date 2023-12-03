@@ -7,7 +7,7 @@ import Navbar from 'components/Navbar';
 import DrycleaningServices from 'pages/Drycleaning';
 import ScrollToTop from 'components/ScrollToTop';
 import Footer from 'components/Footer';
-import Portfolio from 'pages/Portfolio';
+
 
 const App = () => {
   const location = useLocation(); 
@@ -20,7 +20,7 @@ const App = () => {
           <Routes key={location.pathname} location={location}>
             <Route  path="/drycleaning" element={<DrycleaningServices />} />
             <Route path="/services" element={<Services />} />
-            <Route path="/portfolio" element={<Portfolio />} />
+           
             <Route path="/" element={<Main />} />
           </Routes>
         </AnimatePresence>
