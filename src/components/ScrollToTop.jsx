@@ -11,9 +11,9 @@ function ScrollToTop() {
   })
   return (
     <Div>
-      <a href="#" className={`${visible ? "block" : "none"}`}>
+      <button id='scrolltot' href="#" className={`${visible ? "block" : "none"}`}>
       <FaChevronUp /> 
-      </a>
+      </button>
         
     </Div>
   )
@@ -25,7 +25,7 @@ max-width: 100vh;
   opacity: 0;
   visibility: hidden;
 }
-a{
+#scrolltot{
   position: fixed;
   bottom: 40px;
   right: 40px;
