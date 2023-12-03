@@ -133,6 +133,10 @@ ul {
 flex-direction: column;
   }
   .features-section:hover, .features-section:active{
-    flex:8 2;
+    flex:8 2 !important;
   }
+  .features-container{
+    height: auto;
+  }
+ 
 }

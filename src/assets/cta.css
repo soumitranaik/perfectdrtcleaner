@@ -1,0 +1,115 @@
+.section-cta {
+background-color: #ebebeb;
+    padding: 8rem 0 8rem;
+    @media (max-width: 768px) {
+      padding: 2rem 0 3rem;
+    }
+    .cta-container {
+      
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      max-width: 980px;
+      margin: 0 auto;
+      @media (max-width: 768px) {
+        display: block;
+      }
+    }
+    &.cta-invert .cta-container {
+      flex-direction: row-reverse;
+    }
+    .cta-desc-content,
+    .cta-btn-content {
+      display: inline-block;
+      text-align: center;
+      padding: 1rem;
+      @media (max-width: 768px) {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        width: 70%;
+      }
+      @media (max-width: 480px) {
+        width: 100%;
+      }
+    }
+    .cta-desc-content {
+      position: relative;
+    }
+    .cta-icon {
+      color: rgba(#000, 0.04);
+      font-size: 18rem;
+      top: -1.2rem;
+      left: 0;
+      position: absolute;
+      @media (max-width: 768px) {
+        font-size: 14rem;
+        left: 5rem;
+      }
+      @media (max-width: 768px) {
+        left: 20px;
+      }
+    }
+    .cta-title {
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: ##000;
+      @media (max-width: 480px) {
+        font-size: 1.6rem;
+      }
+    }
+    .cta-desc {
+      color: #666;
+      font-size: 1.2rem;
+      line-height: 1.4;
+      margin-top: 2rem;
+      font-weight: 300;
+      @media (max-width: 340px) {
+        font-size: 1rem;
+      }
+    }  
+    .cta-btn {
+      background-color: #25D366;
+      color: #fff;
+      padding: 0 1rem;
+      width: 320px;
+      display: block;
+      font-size: 1.8rem;
+      border-radius: 60px;
+      line-height: 70px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      box-shadow: 0 0 25px rgba(#000, 0.1);
+      i {
+        border-right: 1px solid rgba(#fff, 0.2);
+        padding-right: 10px;
+      }
+      &:hover {
+        box-shadow: 0 0 45px rgba(#000, 0.2);
+      }
+      &:focus {
+        box-shadow: 0 0 0 4px rgba(#000, 0.12);
+      }
+      @media (max-width: 768px) {
+        font-size: 1.2rem;
+        line-height: 60px;
+        width: 240px;
+        margin: 0 auto;
+      }
+    }
+    .cta-label {
+      color: #777;
+      display: block;
+      font-size: 12px;
+      margin-top: 0.3rem;
+    }
+  }
+  
+  // cta whatsapp
+  .cta-whatsapp {
+    background: rgba(#000, 0.01);
+    .cta-btn {
+      background-color: #25D366;
+    }
+  }

@@ -152,6 +152,8 @@ min-height: 100vh;
 .contact{
   margin: 1rem;
   padding: 0 1rem;
+  height: auto;
+  margin: 4rem 1rem;
   &__title{
     margin: 0;
     text-align: center;

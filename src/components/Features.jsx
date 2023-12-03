@@ -19,6 +19,7 @@ const Features = () => {
         whileHover={{ backgroundColor: "rgba(0, 0, 0, 0.7)" }}
         onHoverStart={() => setIshovered(true)}
         onHoverEnd={() => setIshovered(false)}
+        
         initial={{ scale: 0 }}
         animate={{ scale: 1 }}
         transition={{ duration: 0.3 }}

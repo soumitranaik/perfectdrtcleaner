@@ -6,12 +6,28 @@ import { motion, useAnimation } from 'framer-motion';
 import play from "assets/play.png";
 import { useInView } from 'react-intersection-observer';
 import { useEffect } from 'react';
+import { FaCar, FaCheck, FaClock } from 'react-icons/fa';
+import { BsClock, BsTruck } from 'react-icons/bs';
+
 
 
 function About() {
   const controls = useAnimation();
   const [ref, inView] = useInView();
   const [ref2, inView2] = useInView();
+
+  const buttonVariants = {
+    initial: {
+      backgroundColor: "#00c0de", // Initial background color
+    },
+    hover: {
+      backgroundColor: "#000", // Background color on hover
+      transition: {
+        duration: 0.3,
+        ease: "easeInOut",
+      },
+    },
+  };
   
   const slideInVariants = {
     hidden: { x: '-100%' }, // Start position (fully outside the viewport on the left)
@@ -67,14 +83,15 @@ function About() {
               cleaning service; you're trusting us with your most cherished
               items, and we take that responsibility seriously. What sets us
               apart is our unwavering dedication to providing the best service
-              possible. We go beyond the surface, ensuring that each item
-              receives the care and attention it deserves. It's not just about
-              hygiene; it's about creating an environment that leaves you
-              feeling refreshed and satisfied.
+              possible. <br /><br />
+              <p style={{display:'inline-flex', alignItems:'center'}}><BsTruck style={{fontSize:'32', color:'#00c0de', marginRight:'2rem'}} /> Free Home Delivery</p><br></br>
+              <p style={{display:'inline-flex', alignItems:'center'}}><BsClock style={{fontSize:'32', color:'#00c0de', marginRight:'2rem'}} /> 24 X 7 Service</p>
             </p>
             <div className="more">
-              <motion.img whileHover={{ scale: 1.1 }} src={play} alt="Play" />
-              <span>Read More</span>
+              
+              <motion.button class="up" variants={buttonVariants}
+      initial="initial"
+      whileHover="hover"> Schedule a Free Pick-Up</motion.button>
             </div>
           </motion.div>
         </motion.div>
@@ -118,18 +135,36 @@ const Section = styled.section`
         p {
           color: var(--primary-color);
         }
-        .more{
+        .more {
           margin-top: 3rem;
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-      cursor: pointer;
-      span{
-        letter-spacing: 0.1rem;
-        text-transform: uppercase;
-        color: var(--primary-color);
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+          cursor: pointer;
+          span {
+            letter-spacing: 0.1rem;
+            text-transform: uppercase;
+            color: var(--primary-color);
+          }
+        }
+        button {
+          
+            background: #00c0de;
+            border: none;
+            color: #fff;
+            font: inherit;
+            line-height: 1;
+            margin: 0.5em;
+            padding: 1em 2em;
+          
+        }
+        button: hover{
+          
+          background-color: #000;
+          color: #fff
+
+        
       }
-    }
       }
     }
   }
@@ -138,7 +173,7 @@ const Section = styled.section`
       padding-top: 5rem;
     }
   }
-  @media screen and (min-width: 280px) and (max-width: 680px) {
+  @media screen and (min-width: 280px) and (max-width: 1000px) {
     .about-us {
       margin: 2rem 0;
       display: block;

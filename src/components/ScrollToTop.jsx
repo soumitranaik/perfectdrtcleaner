@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { FaChevronUp } from 'react-icons/fa'
+import { FaChevronUp, FaWhatsapp } from 'react-icons/fa'
 import { useState } from 'react';
 
 function ScrollToTop() {
@@ -11,9 +11,9 @@ function ScrollToTop() {
   })
   return (
     <Div>
-      <button id='scrolltot' href="#" className={`${visible ? "block" : "none"}`}>
-      <FaChevronUp /> 
-      </button>
+      <a id='scrolltot' href="https://api.whatsapp.com/send?phone=9899416600" className={`${visible ? "block" : "none"}`}>
+      <FaWhatsapp /> 
+      </a>
         
     </Div>
   )
@@ -29,7 +29,7 @@ max-width: 100vh;
   position: fixed;
   bottom: 40px;
   right: 40px;
-  background-color: var(--secondary-color);
+  background-color: #25D366 ;
   padding: 1rem;
   border-radius: 100%;
   display: flex;
