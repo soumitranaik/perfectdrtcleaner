@@ -5,6 +5,7 @@ const Reviews = () => {
   return (
     <Section id="reviews">
       <iframe
+      title='review'
         src="https://7e04e7f3d4374d1195bbd86785c90cac.elf.site"
         width="100%"
         height="350"

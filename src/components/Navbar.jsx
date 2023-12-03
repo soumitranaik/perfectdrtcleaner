@@ -44,19 +44,19 @@ function Navbar() {
             <a href="/">Home</a>
           </li>
           <li>
-            <a href="/drycleaning">Services</a>
+            <a href="/">Services</a>
           </li>
           <li>
-            <a href="/portfolio">Portfolio</a>
+            <a href="/">Portfolio</a>
           </li>
           <li>
-            <a href="#blog">Blog</a>
+            <a href="/">Blog</a>
           </li>
           <li>
-            <a href="#skills">Skills</a>
+            <a href="/">Skills</a>
           </li>
           <li>
-            <a href="#contact">Contact</a>
+            <a href="/">Contact</a>
           </li>
         </ul>
       </div>

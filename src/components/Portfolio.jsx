@@ -29,7 +29,7 @@ function Portfolio() {
         <motion.div variants={portfolioAnimation} animate={controls} transition={{delay: 0.03, type:"tween", duration:0.8}} className="child-eight grid-box"></motion.div>
       </div>
       <div className="portfolio-more">
-        <span>Load More</span>
+        <span>View All</span>
         <img src={loadmore} alt="Load more"/>
       </div>
     </Section>  
