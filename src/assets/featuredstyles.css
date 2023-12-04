@@ -103,6 +103,9 @@
 ul {
   list-style: none;
 }
+.features-section .content ul{
+  padding-left: 0;
+}
 
 /*li::before {
   content: "\f054";

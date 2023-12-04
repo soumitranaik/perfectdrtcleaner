@@ -16,6 +16,7 @@ import Features from './Features';
 import Reviews from './Reviews';
 import Work from './Work';
 import CalltoAction from './CalltoAction';
+import Offer from './Offer';
 
 export const Main = () => {
   return (
@@ -27,8 +28,8 @@ export const Main = () => {
         <About />
         
         <Features />
-        <Blog />
         
+        <Offer />
         <Reviews />
         <Work />
         <CalltoAction />
