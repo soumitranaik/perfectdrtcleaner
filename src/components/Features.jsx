@@ -57,7 +57,7 @@ const Features = () => {
         onHoverEnd={() => setIshovered2(false)}
         initial={{ scale: 0 }}
         animate={{ scale: 1 }}
-        transition={{ duration: 0.3 }}
+        transition={{ duration: 2 }}
       >
         <div className="content">
           <h1>Textile Revitalization</h1>
@@ -66,7 +66,7 @@ const Features = () => {
               className="features-text"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              transition={{ duration: 1, ease: "easeInOut" }}
+              transition={{ duration: 2, ease: "easeInOut" }}
             >
               <ul>
                 <li>
@@ -100,7 +100,7 @@ const Features = () => {
               className="features-text"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              transition={{ duration: 1, ease: "easeInOut" }}
+              transition={{ duration: 2, ease: "easeInOut" }}
             >
               <ul>
                 <li>
@@ -136,7 +136,7 @@ const Features = () => {
               className="features-text"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              transition={{ duration: 1, ease: "easeInOut" }}
+              transition={{ duration: 2, ease: "easeInOut" }}
             >
               <ul>
                 <li>

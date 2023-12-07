@@ -1,17 +1,18 @@
 import React, { useState, useEffect } from 'react';
 import logo from "assets/logo.png";
 import { styled } from 'styled-components';
-import { GiHamburgerMenu } from "react-icons/gi";
-import { MdClose } from "react-icons/md"
+import { GiHamburger, GiHamburgerMenu } from "react-icons/gi";
+import { MdClose, MdMenu } from "react-icons/md"
 import { useScroll } from 'components/useScroll';
 import { navAnimation } from 'animation';
 import { motion } from 'framer-motion';
+import { FaHamburger } from 'react-icons/fa';
 
 
 function Navbar() {
   const [isNavOpen, setIsNavOpen] = useState(false);
   const [element, controls] = useScroll();
-
+  console.log(isNavOpen)
   return (
     <Nav ref={element}
     variants={navAnimation}
@@ -28,7 +29,7 @@ function Navbar() {
             isNavOpen ? ( 
               <MdClose onClick={() => setIsNavOpen(false)} />
             ) : (
-              <GiHamburgerMenu
+              <MdMenu
               onClick={(e) => {
               e.stopPropagation();
               setIsNavOpen(true);
@@ -49,18 +50,14 @@ function Navbar() {
           <li>
             <a href="/">Portfolio</a>
           </li>
-          <li>
-            <a href="/">Blog</a>
-          </li>
-          <li>
-            <a href="/">Skills</a>
-          </li>
+         
           <li>
             <a href="/">Contact</a>
           </li>
         </ul>
       </div>
     </Nav>
+    
   )
 }
 
@@ -70,8 +67,8 @@ const Nav = styled(motion.nav)`
   margin: 0 2rem;
   align-items: center;
   color: #fff;
- /* padding-top: 1rem;
-  padding-bottom: 1rem;*/
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   .brand__container{
     margin: 0 2rem;
     .toggle{
@@ -99,7 +96,7 @@ const Nav = styled(motion.nav)`
     }
   }
   .logoimg{
-    width: 100px;
+    width: 250px;
     height: auto;
   }
   @media screen and (min-width: 280px) and  (max-width: 1080px){
@@ -111,9 +108,11 @@ const Nav = styled(motion.nav)`
       align-items: center;
       width: 100%;
       .toggle{
-        padding-right: 1rem;
+       /* padding-right: 1rem;*/
         display: block;
         z-index: 1;
+        color: #000;
+        font-size: 2rem;
       }
     }
     .show{

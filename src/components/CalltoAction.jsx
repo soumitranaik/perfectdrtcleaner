@@ -16,7 +16,7 @@ const CalltoAction = () => {
           <i class="cta-icon fa fa-whatsapp"></i>
         </div>
         <div class="cta-btn-content">
-          <a class="cta-btn" href="#!">
+          <a class="cta-btn" href="https://api.whatsapp.com/send?phone=9899416600" target='_blank'>
             <i class="fa fa-whatsapp"></i> +91 98994 16600
           </a>
           <small class="cta-label">available 24 x 7</small>

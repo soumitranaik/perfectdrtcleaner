@@ -16,7 +16,7 @@ const Reviews = () => {
 }
 
 const Section = styled.section` 
-background-color: #000;
+background-color: #031d27;
 padding: 10rem 0;
 @media screen and (min-width: 280px) and  (max-width: 1080px){
   

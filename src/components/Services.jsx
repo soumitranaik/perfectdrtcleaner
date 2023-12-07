@@ -32,7 +32,7 @@ function Services() {
     },
   ];
   return <Section id="services" ref={element}>
-    <Title value="services" />
+    <Title value="services"/>
     <motion.div
         className="info-mobile"
         variants={homeInfoAnimation}
@@ -106,7 +106,7 @@ const Section = styled.section`
     /*height: 100vh;*/
     margin-right: 14rem;
     margin-left: 14rem;
-    margin-top: 18rem;
+    margin-top: 8rem;
     margin-bottom: 10rem;
     gap: 5rem;
     &__service {
@@ -143,8 +143,32 @@ const Section = styled.section`
       }
     }
   }
+  #services{
+
+  }
+  h1{
+    top: 20rem;
+  }
   .info-mobile{
-    display: none;
+      position: relative;
+      z-index: 100;
+      
+      right: 0;
+      left: 0;
+      margin: 0 10rem;
+      background-color: var(--secondary-color);
+      padding: 3rem;
+      border-bottom: 7px solid #000;
+      .grid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 4rem;
+        color: #fff;
+        text-align: center;
+      }
+    }
+  .info-mobile{
+    display: block;
   }
   
   @media (min-width: 1600px) {

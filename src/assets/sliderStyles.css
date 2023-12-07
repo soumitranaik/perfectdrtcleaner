@@ -27,6 +27,7 @@
     border-radius: 20px;
     box-shadow:  0 30px 50px #505050;
 }
+
 .item:nth-child(1),
 .item:nth-child(2){
     left:0;
@@ -38,17 +39,18 @@
     box-shadow: none;
 }
 .item:nth-child(3){
-    left:50%;
+    left:65.5%;
 }
 .item:nth-child(4){
-    left:calc(50% + 220px);
-}
-.item:nth-child(5){
     left:calc(50% + 440px);
 }
-.item:nth-child(n+6){
+.item:nth-child(5){
     left:calc(50% + 660px);
+}
+.item:nth-child(n+6){
+    left:calc(50% + 880px);
     opacity: 0;
+    
 }
 .item .content{
     position: absolute;
@@ -99,7 +101,7 @@
 }
 .buttons{
     position: absolute;
-    bottom:45px;
+    bottom:18px;
     z-index: 222222;
     text-align: center;
     width:100%;

@@ -62,3 +62,16 @@ export const yourExitVariants = {
     hidden: { opacity: 0 },
     exit: { opacity: 0 },
   };
+
+  export const buttonVariants = {
+    initial: {
+      backgroundColor: "#00c0de", // Initial background color
+    },
+    hover: {
+      backgroundColor: "#000", // Background color on hover
+      transition: {
+        duration: 0.3,
+        ease: "easeInOut",
+      },
+    },
+  };

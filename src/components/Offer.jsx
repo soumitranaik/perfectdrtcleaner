@@ -30,7 +30,7 @@ const Offer = () => {
         {
           icon: groom,
           title: 'Wedding Dress Cleaning',
-          description: 'Ensure your wedding dress stays as beautiful as your special day with our premium cleaning service',
+          description: 'Ensure your wedding dress stays as beautiful as your special day with our premium  service',
         },
         {
           icon: suits,
@@ -50,7 +50,7 @@ const Offer = () => {
             <div className="row">
               <div className="col-md-12">
                 <div className="site-heading text-center">
-                  <h2>Other <span>Services</span></h2>
+                  <h2 style={{fontSize:'3rem', color:'#031d27'}}>Other <span>Services</span></h2>
                   <h4>Our range of flexible services</h4>
                 </div>
               </div>

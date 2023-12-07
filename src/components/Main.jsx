@@ -17,6 +17,7 @@ import Reviews from './Reviews';
 import Work from './Work';
 import CalltoAction from './CalltoAction';
 import Offer from './Offer';
+import Slider from './Slider';
 
 export const Main = () => {
   return (

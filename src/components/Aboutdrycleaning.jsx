@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import shop from '../assets/shop.jpg';
+import aboutUsImage from '../assets/portfolio1.jpg';
 import Title from './Title';
 import { motion, useAnimation } from 'framer-motion';
 import play from "assets/play.png";
@@ -8,10 +8,11 @@ import { useInView } from 'react-intersection-observer';
 import { useEffect } from 'react';
 import { FaCar, FaCheck, FaClock } from 'react-icons/fa';
 import { BsClock, BsTruck } from 'react-icons/bs';
+import shop from '../assets/banner1.jpg'
 
 
 
-function About() {
+function Aboutdrycleaning() {
   const controls = useAnimation();
   const [ref, inView] = useInView();
   const [ref2, inView2] = useInView();
@@ -21,7 +22,7 @@ function About() {
       backgroundColor: "#00c0de", // Initial background color
     },
     hover: {
-      backgroundColor: "#031d27", // Background color on hover
+      backgroundColor: "#000", // Background color on hover
       transition: {
         duration: 0.3,
         ease: "easeInOut",
@@ -53,7 +54,7 @@ function About() {
 
   return (
     <Section id="aboutUs">
-      <Title value="about us" />
+     
       <div className="about-us">
         <motion.div className="content">
           <motion.div
@@ -74,24 +75,36 @@ function About() {
             variants={slideOutVariants}
             transition={slideInTransition}
           >
-            <h2>Perfect Dry Cleaner: We Clean, You Should Relax</h2>
+            <h2>Unparalleled Dry Cleaning Excellence</h2>
             <p>
-              'We Clean, You Should Relax' is not just a slogan; it's a promise.
-              Our team of dedicated professionals specializes in the intricate
-              cleaning of carpets, sofas, curtains, designer dresses, and
-              wedding dresses. When you choose us, you're not just opting for a
-              cleaning service; you're trusting us with your most cherished
-              items, and we take that responsibility seriously. What sets us
-              apart is our unwavering dedication to providing the best service
-              possible. <br /><br />
-              <p style={{display:'inline-flex', alignItems:'center'}}><BsTruck style={{fontSize:'32', color:'#00c0de', marginRight:'2rem'}} /> Free Home Delivery</p><br></br>
-              <p style={{display:'inline-flex', alignItems:'center'}}><BsClock style={{fontSize:'32', color:'#00c0de', marginRight:'2rem'}} /> 24 X 7 Service</p>
+              Experience the pinnacle of garment care with our specialized dry
+              cleaning services. At our facility, we go beyond the ordinary,
+              using advanced technology and a keen eye for detail to revitalize
+              your wardrobe. Our gentle yet effective process caters to a wide
+              range of fabrics, from delicate silks to intricate embellishments.
+              Stubborn stains are no match for our expert stain removal
+              techniques. Whether it's your everyday wear or cherished special
+              occasion garments, we handle each item with the utmost care,
+              preserving their integrity and extending their lifespan. Trust us
+              to bring a new level of freshness to your clothes, leaving you
+              with a wardrobe that feels as good as new. Discover the difference
+              of meticulous craftsmanship combined with cutting-edge technology
+              in our dry cleaning services. <br />
+              <br />
+              
+              <br></br>
+              
             </p>
             <div className="more">
-              
-              <motion.button class="up" variants={buttonVariants}
-      initial="initial"
-      whileHover="hover"> Schedule a Free Pick-Up</motion.button>
+              <motion.button
+                class="up"
+                variants={buttonVariants}
+                initial="initial"
+                whileHover="hover"
+              >
+                {" "}
+                Schedule a Free Pick-Up
+              </motion.button>
             </div>
           </motion.div>
         </motion.div>
@@ -106,9 +119,9 @@ const Section = styled.section`
     display: flex;
     align-items: center;
     height: 100%;
-    margin-right: 14rem;
+    margin-right: 12rem;
 
-    margin-left: 14rem;
+    margin-left: 12rem;
     height: 100vh;
     /*margin-top: 10rem;*/
     gap: 5rem;
@@ -194,4 +207,4 @@ const Section = styled.section`
   }
 `;
 
-export default About
+export default Aboutdrycleaning

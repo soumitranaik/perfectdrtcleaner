@@ -42,7 +42,7 @@ function Home() {
           </motion.div>
   </motion.div>*/}
   <Slider />
-      <motion.div
+      {/*<motion.div
         className="info"
         variants={homeInfoAnimation}
         transition={{ delay: 0.3, duration: 0.6, type: "tween" }}
@@ -69,7 +69,7 @@ function Home() {
           </div>
           
         </div>
-      </motion.div>
+</motion.div>*/}
     </Section>
   );
 }
