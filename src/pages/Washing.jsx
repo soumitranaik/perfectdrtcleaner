@@ -83,7 +83,7 @@ function Washing() {
         </div>
       </div>
 
-      <div class="container-fluid services-boxes py-5">
+      <div class="container-fluid services-boxes py-10">
         <div class="container py-5">
           <div class="row g-5 align-items-center">
             <div class="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
