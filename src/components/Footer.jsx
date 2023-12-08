@@ -17,7 +17,7 @@ function Footer() {
       duration: 0.8
       }}
       >
-        &copy; Perfect Dry Cleaner
+        &copy;2024 Perfect Dry Cleaner
       </motion.span>
       <motion.div className="footer__social__icons"
          variants={footertextAnimation}
@@ -27,9 +27,9 @@ function Footer() {
          duration: 0.8
          }}
       >
-        <BsFacebook />
-        <BsTwitter />
-        <BsInstagram />
+        <a href="https://www.facebook.com/perfectdrycleaningstore/" style={{color:'#fff', fontSize:'24px'}}><BsFacebook /></a>
+        <a href="#" style={{color:'#fff', fontSize:'24px'}}><BsInstagram /></a>
+        
         
       </motion.div>
     </Foot>

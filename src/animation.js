@@ -69,6 +69,7 @@ export const yourExitVariants = {
     },
     hover: {
       backgroundColor: "#000", // Background color on hover
+      color: "#fff",
       transition: {
         duration: 0.3,
         ease: "easeInOut",

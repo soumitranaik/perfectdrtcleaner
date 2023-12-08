@@ -10,17 +10,17 @@ import AnimatedPage from 'components/AnimatedPage';
 import '../assets/innerstyles.css';
 import {} from 'react-icons'
 import { FaAddressCard, FaBlackTie, FaHatCowboy, FaHatCowboySide, FaTshirt } from 'react-icons/fa';
-import { MdWash } from 'react-icons/md';
-import { BsSuitClub, BsSuitHeart, BsWallet } from 'react-icons/bs';
-import { GiClothes, GiFurShirt, GiLifeJacket, GiPoloShirt, GiShinyPurse, GiShirt, GiSkirt, GiSuits, GiWashingMachine, GiWingedShield } from 'react-icons/gi';
+import { MdColorize, MdWash } from 'react-icons/md';
+import { BsSuitClub, BsSuitHeart, BsWallet, BsWind } from 'react-icons/bs';
+import { GiClothes, GiDelicatePerfume, GiDress, GiFurShirt, GiLifeJacket, GiPerfumeBottle, GiPoloShirt, GiShinyPurse, GiShirt, GiSkirt, GiSuits, GiWashingMachine, GiWingedShield } from 'react-icons/gi';
 import Aboutdrycleaning from 'components/Aboutdrycleaning';
 import CalltoAction from 'components/CalltoAction';
+import Aboutwashing from 'components/Aboutwashing';
 import { buttonVariants } from 'animation';
 
 
 
-
-function DrycleaningServices() {
+function Washing() {
   /*const [element, controls] = useScroll();*/
 
   const iconStyle = {
@@ -48,7 +48,7 @@ function DrycleaningServices() {
                 class="display-4 text-white mb-4 animated slideInRight"
                 style={{ fontWeight: "600", textTransform: "uppercase" }}
               >
-                Dry Cleaning
+                Washing
               </h1>
               {/*<nav aria-label="breadcrumb">
                 <ol class="breadcrumb justify-content-center justify-content-lg-start mb-0">
@@ -83,7 +83,7 @@ function DrycleaningServices() {
         </div>
       </div>
 
-      <div class="container-fluid services-boxes py-10">
+      <div class="container-fluid services-boxes py-5">
         <div class="container py-5">
           <div class="row g-5 align-items-center">
             <div class="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
@@ -94,22 +94,27 @@ function DrycleaningServices() {
                 Our Services
               </div>
               <h1 class="mb-4">
-                Exceptional Dry Cleaning Solutions Tailored for Your Garments
+                Unmatched Laundry Expertise Personalized for Your Clothes
               </h1>
               <p class="mb-4">
-                Discover the pinnacle of care for your wardrobe with our
-                specialized dry cleaning services. Our advanced AI-driven
-                solutions ensure precision and quality, leaving your clothes
-                impeccably clean and refreshed. Trust us with your garments, and
-                experience the perfect blend of technology and expertise for a
-                lasting impact on your wardrobe<br /><br />
+                Embark on a journey of unparalleled care for your attire through
+                our specialized washing services. Leveraging advanced
+                technologies and expert techniques, we guarantee meticulous
+                cleaning that revitalizes your clothes. Whether it's everyday
+                wear or special garments, our commitment to precision ensures
+                your wardrobe receives the utmost attention and care. Choose our
+                washing services for a transformative experience, where
+                cutting-edge methods meet dedicated expertise, leaving a lasting
+                impression on the freshness and longevity of your clothing.
+                <br />
+                <br />
               </p>
               <motion.a
                 class="up"
                 variants={buttonVariants}
                 initial="initial"
                 whileHover="hover"
-                style={{color:'#fff', marginTop:'6rem' }}
+                style={{ color: "#fff", marginTop: "6rem" }}
               >
                 Book Now
               </motion.a>
@@ -121,7 +126,7 @@ function DrycleaningServices() {
                     <div class="col-12 wow fadeIn" data-wow-delay="0.1s">
                       <div class="service-item shadow-lg d-flex flex-column justify-content-center text-center rounded">
                         <div>
-                          <MdWash
+                          <MdColorize
                             style={{
                               fontSize: "64px",
                               color: "#f8f8f8",
@@ -129,11 +134,12 @@ function DrycleaningServices() {
                             }}
                           />
                         </div>
-                        <h5 class="mb-3">Delicate Fabric Care</h5>
+                        <h5 class="mb-3">Color Protection Technology</h5>
                         <p>
-                          Gentle yet effective, we to cater to delicate fabrics,
-                          ensuring they receive the utmost care and attention,
-                          leaving them looking and feeling as good as new.
+                          Our gentle yet
+                          powerful washing process ensures that your colorful
+                          garments maintain their brilliance, looking as vivid
+                          as the day you bought them.
                         </p>
                         <a class="btn px-3 mt-auto mx-auto" href="">
                           Read More
@@ -147,12 +153,12 @@ function DrycleaningServices() {
                             style={{ fontSize: "64px", color: "#f8f8f8" }}
                           />
                         </div>
-                        <h5 class="mb-3">Stain Removal Expertise</h5>
+                        <h5 class="mb-3">Gentle Stain Removal</h5>
                         <p>
-                          Our dry cleaning specialists are equipped with
-                          advanced stain removal techniques, targeting even the
-                          toughest marks to restore your garments to their
-                          pristine condition.
+                         From everyday spills to stubborn stains, we
+                          take special care to treat each mark effectively,
+                          leaving your clothes spotless without compromising the
+                          integrity of the fabric.
                         </p>
                         <a class="btn px-3 mt-auto mx-auto" href="">
                           Read More
@@ -166,15 +172,17 @@ function DrycleaningServices() {
                     <div class="col-12 wow fadeIn" data-wow-delay="0.3s">
                       <div class="service-item shadow-lg d-flex flex-column justify-content-center text-center rounded">
                         <div class="service-icon btn-square">
-                          <FaBlackTie
+                          <GiDress
                             style={{ fontSize: "64px", color: "#f8f8f8" }}
                           />
                         </div>
-                        <h5 class="mb-3">Specialized Suit Cleaning</h5>
+                        <h5 class="mb-3">Fabric-Specific Treatment</h5>
                         <p>
-                          Our meticulous approach maintains the integrity of
-                          suit fabrics, ensuring they retain their shape, color,
-                          and sophistication.
+                         Whether it's delicate cotton,
+                          high-performance activewear, or luxurious linens, our
+                          laundry experts apply specialized treatments to ensure
+                          each fabric gets the attention it deserves, resulting
+                          in garments that feel fresh and soft.
                         </p>
                         <a class="btn px-3 mt-auto mx-auto" href="">
                           Read More
@@ -184,7 +192,7 @@ function DrycleaningServices() {
                     <div class="col-12 wow fadeIn" data-wow-delay="0.7s">
                       <div class="service-item shadow-lg d-flex flex-column justify-content-center text-center rounded">
                         <div class="service-icon btn-square">
-                          <FaHatCowboySide
+                          <GiDelicatePerfume
                             style={{
                               fontSize: "64px",
                               color: "#f8f8f8",
@@ -192,11 +200,13 @@ function DrycleaningServices() {
                             }}
                           />
                         </div>
-                        <h5 class="mb-3">Luxury Item Revitalization</h5>
+                        <h5 class="mb-3">Fragrance Infusion</h5>
                         <p>
-                          Our dry cleaning experts employ a meticulous process
-                          to rejuvenate and revitalize, preserving the elegance
-                          and quality of your high-end garments.
+                          We go beyond just cleaning; our washing
+                          services include a touch of delightful fragrance,
+                          leaving your clothes not only impeccably clean but
+                          also smelling wonderfully fresh, making every wear a
+                          pleasant experience.
                         </p>
                         <a class="btn px-3 mt-auto mx-auto" href="">
                           Read More
@@ -210,7 +220,7 @@ function DrycleaningServices() {
           </div>
         </div>
       </div>
-      <Aboutdrycleaning />
+      <Aboutwashing />
       <div class="container-fluid py-5" style={{ backgroundColor: "#f8f8f8" }}>
         <div class="container py-5">
           <div
@@ -219,7 +229,7 @@ function DrycleaningServices() {
             style={{ maxWidth: "500px" }}
           >
             <div
-              class="btn btn-sm border rounded-pill  px-3 mb-3"
+              class="btn btn-sm border rounded-pill px-3 mb-3"
               style={{ color: "#00c0de" }}
             >
               Popular FAQs
@@ -239,7 +249,7 @@ function DrycleaningServices() {
                       aria-expanded="false"
                       aria-controls="collapseOne"
                     >
-                      How does dry cleaning differ from traditional laundry?
+                      What techniques do you use for washing garments?
                     </button>
                   </h2>
                   <div
@@ -249,9 +259,10 @@ function DrycleaningServices() {
                     data-bs-parent="#accordionFAQ1"
                   >
                     <div class="accordion-body">
-                      Dry cleaning uses a solvent instead of water to clean
-                      clothes. It's ideal for delicate fabrics and garments with
-                      intricate details.
+                      We employ state-of-the-art washing techniques, including
+                      gentle agitation and precise water temperature control, to
+                      ensure the optimal cleanliness and preservation of your
+                      garments.
                     </div>
                   </div>
                 </div>
@@ -265,7 +276,7 @@ function DrycleaningServices() {
                       aria-expanded="false"
                       aria-controls="collapseTwo"
                     >
-                      Are all fabrics suitable for dry cleaning?
+                      Is your laundry service suitable for all types of fabrics?
                     </button>
                   </h2>
                   <div
@@ -275,9 +286,10 @@ function DrycleaningServices() {
                     data-bs-parent="#accordionFAQ1"
                   >
                     <div class="accordion-body">
-                      Dry cleaning is suitable for a wide range of fabrics,
-                      including silk, wool, and delicate synthetics. However,
-                      some fabrics may have specific care instructions.
+                      Yes, our laundry service caters to a wide range of
+                      fabrics, from delicate silks to everyday cotton. We
+                      customize our approach based on the specific care needs of
+                      each fabric.
                     </div>
                   </div>
                 </div>
@@ -291,7 +303,8 @@ function DrycleaningServices() {
                       aria-expanded="false"
                       aria-controls="collapseThree"
                     >
-                      How often should I dry clean my clothes?
+                      How do you handle garments with embellishments or
+                      decorations?
                     </button>
                   </h2>
                   <div
@@ -301,9 +314,9 @@ function DrycleaningServices() {
                     data-bs-parent="#accordionFAQ1"
                   >
                     <div class="accordion-body">
-                      The frequency depends on factors like garment type, wear,
-                      and stains. Generally, items like suits and special
-                      occasion wear benefit from occasional dry cleaning.
+                      Our laundry process is gentle and ensures the safety of
+                      embellished garments. We take extra care to protect
+                      decorations during the cleaning process.
                     </div>
                   </div>
                 </div>
@@ -314,10 +327,11 @@ function DrycleaningServices() {
                       type="button"
                       data-bs-toggle="collapse"
                       data-bs-target="#collapseFour"
-                      aria-expanded="true"
+                      aria-expanded="false"
                       aria-controls="collapseFour"
                     >
-                      Can you remove all types of stains?
+                      Can I trust your laundry service with valuable or
+                      sentimental items?
                     </button>
                   </h2>
                   <div
@@ -327,10 +341,10 @@ function DrycleaningServices() {
                     data-bs-parent="#accordionFAQ1"
                   >
                     <div class="accordion-body">
-                      Our experts use advanced stain removal techniques, but
-                      success depends on the stain type, fabric, and how quickly
-                      it's treated. Some stubborn stains may require special
-                      attention.
+                      Absolutely. Our experienced team understands the
+                      importance of sentimental and valuable items. We take
+                      every precaution to ensure the safe and meticulous
+                      cleaning of such garments.
                     </div>
                   </div>
                 </div>
@@ -348,8 +362,7 @@ function DrycleaningServices() {
                       aria-expanded="false"
                       aria-controls="collapseFive"
                     >
-                      Is dry cleaning safe for embellished or decorated
-                      garments?
+                      What sets your laundry service apart from at-home washing?
                     </button>
                   </h2>
                   <div
@@ -359,9 +372,10 @@ function DrycleaningServices() {
                     data-bs-parent="#accordionFAQ2"
                   >
                     <div class="accordion-body">
-                      Yes, our dry cleaning process is gentle and suitable for
-                      embellished garments. We take extra care to protect
-                      decorations during the cleaning process.
+                      Our laundry service combines cutting-edge technology with
+                      expert craftsmanship, providing thorough and meticulous
+                      cleaning that surpasses the capabilities of home washing
+                      machines.
                     </div>
                   </div>
                 </div>
@@ -375,7 +389,7 @@ function DrycleaningServices() {
                       aria-expanded="false"
                       aria-controls="collapseSix"
                     >
-                      What's the turnaround time for dry cleaning services?
+                      Do you offer any eco-friendly laundry options?
                     </button>
                   </h2>
                   <div
@@ -385,9 +399,9 @@ function DrycleaningServices() {
                     data-bs-parent="#accordionFAQ2"
                   >
                     <div class="accordion-body">
-                      Turnaround times vary depending on the item and service.
-                      We strive to provide prompt service, and our team can
-                      provide specific timelines based on your needs.
+                      Yes, we are committed to sustainability. Ask about our
+                      eco-friendly laundry options, including detergent choices
+                      and water-saving techniques.
                     </div>
                   </div>
                 </div>
@@ -401,8 +415,7 @@ function DrycleaningServices() {
                       aria-expanded="false"
                       aria-controls="collapseSeven"
                     >
-                      Can I trust your dry cleaning services with valuable or
-                      sentimental items?
+                      How can I manage laundry expenses on a strict budget?
                     </button>
                   </h2>
                   <div
@@ -412,10 +425,9 @@ function DrycleaningServices() {
                     data-bs-parent="#accordionFAQ2"
                   >
                     <div class="accordion-body">
-                      Absolutely. Our experienced team understands the
-                      importance of sentimental and valuable items. We take
-                      every precaution to ensure the safe and meticulous
-                      cleaning of such garments.
+                      Visit our store for budget-friendly solutions! Prioritize
+                      essentials, bundle services, and explore discounts to
+                      maintain a stylish wardrobe without breaking the bank.
                     </div>
                   </div>
                 </div>
@@ -429,7 +441,7 @@ function DrycleaningServices() {
                       aria-expanded="false"
                       aria-controls="collapseEight"
                     >
-                      How can I manage dry cleaning expenses on a strict budget?
+                      Can I schedule a pickup and delivery for my laundry?
                     </button>
                   </h2>
                   <div
@@ -439,10 +451,9 @@ function DrycleaningServices() {
                     data-bs-parent="#accordionFAQ2"
                   >
                     <div class="accordion-body">
-                      Visit our store for budget-friendly solutions! Prioritize
-                      essentials, bundle services, and explore DIY options.
-                      We're here to help you maintain a stylish wardrobe without
-                      breaking the bank.
+                      Yes, we offer convenient pickup and delivery services.
+                      Schedule a time that suits you, and our team will ensure
+                      your laundry is collected and returned to your doorstep.
                     </div>
                   </div>
                 </div>
@@ -451,6 +462,7 @@ function DrycleaningServices() {
           </div>
         </div>
       </div>
+
       <CalltoAction />
     </>
   );
@@ -526,4 +538,4 @@ min-height: 100vh;
       }
 `;
 
-export default DrycleaningServices;
+export default Washing;

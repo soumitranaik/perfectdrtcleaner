@@ -8,11 +8,11 @@ import { useInView } from 'react-intersection-observer';
 import { useEffect } from 'react';
 import { FaCar, FaCheck, FaClock } from 'react-icons/fa';
 import { BsClock, BsTruck } from 'react-icons/bs';
-import shop from '../assets/banner1.jpg'
+import shop from '../assets/shop3.jpg'
 
 
 
-function Aboutdrycleaning() {
+function Aboutwashing() {
   const controls = useAnimation();
   const [ref, inView] = useInView();
   const [ref2, inView2] = useInView();
@@ -54,7 +54,6 @@ function Aboutdrycleaning() {
 
   return (
     <Section id="aboutUs">
-     
       <div className="about-us">
         <motion.div className="content">
           <motion.div
@@ -75,25 +74,25 @@ function Aboutdrycleaning() {
             variants={slideOutVariants}
             transition={slideInTransition}
           >
-            <h2>Unparalleled Dry Cleaning Excellence</h2>
+            <h2>Soothing Fabric Care: Washing Services</h2>
             <p>
-              Experience the pinnacle of garment care with our specialized dry
-              cleaning services. At our facility, we go beyond the ordinary,
-              using advanced technology and a keen eye for detail to revitalize
-              your wardrobe. Our gentle yet effective process caters to a wide
-              range of fabrics, from delicate silks to intricate embellishments.
-              Stubborn stains are no match for our expert stain removal
-              techniques. Whether it's your everyday wear or cherished special
-              occasion garments, we handle each item with the utmost care,
-              preserving their integrity and extending their lifespan. Trust us
-              to bring a new level of freshness to your clothes, leaving you
-              with a wardrobe that feels as good as new. Discover the difference
-              of meticulous craftsmanship combined with cutting-edge technology
-              in our dry cleaning services. <br />
+              Elevate your everyday with our exceptional washing services that
+              redefine garment care. At our state-of-the-art facility, we take
+              laundry to the next level, seamlessly blending innovative
+              technology with a meticulous approach. From casual wear to
+              intricate fabrics, our advanced washing process caters to a
+              diverse range of clothing items. Tough stains stand no chance
+              against our expert stain removal methods, ensuring that your
+              clothes emerge spotless and refreshed. Whether it's your daily
+              essentials or cherished garments, we treat each item with the
+              utmost attention, preserving their quality and extending their
+              lifespan. Trust us to breathe new life into your laundry,
+              providing you with clothes that look and feel revitalized.
+              Experience the synergy of precision craftsmanship and modern
+              technology in our washing services, setting a new standard for
+              laundry excellence.
               
-              
-          
-              
+              <br></br>
             </p>
             <div className="more">
               <motion.a
@@ -101,8 +100,9 @@ function Aboutdrycleaning() {
                 variants={buttonVariants}
                 initial="initial"
                 whileHover="hover"
+                href="https://api.whatsapp.com/send?phone=9899416600"
               >
-                {" "}
+                
                 Schedule a Free Pick-Up
               </motion.a>
             </div>
@@ -208,4 +208,4 @@ const Section = styled.section`
   }
 `;
 
-export default Aboutdrycleaning
+export default Aboutwashing;

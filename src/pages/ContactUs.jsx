@@ -1,13 +1,56 @@
 import React from 'react';
 import styled from 'styled-components';
-import Title from './Title';
+import Title from '../components/Title';
 import { useScroll } from 'components/useScroll';
 import { contactAnimation } from 'animation';
 import { motion } from 'framer-motion';
+import CalltoAction from 'components/CalltoAction';
 
-const Contact = () => {
+const ContactUs = () => {
   const [element, controls] = useScroll();
   return (
+    <><div class="container-fluid pt-5 bg-primary hero-header">
+    <div class="container pt-5">
+      <div class="row g-5 pt-5">
+        <div class="col-lg-6 align-self-center text-center text-lg-start mb-lg-5">
+          <h1
+            class="display-4 text-white mb-4 animated slideInRight"
+            style={{ fontWeight: "600", textTransform: "uppercase" }}
+          >
+            Contact Us
+          </h1>
+          {/*<nav aria-label="breadcrumb">
+            <ol class="breadcrumb justify-content-center justify-content-lg-start mb-0">
+              <li class="breadcrumb-item">
+                <a class="text-white" href="#">
+                  Home
+                </a>
+              </li>
+              <li class="breadcrumb-item">
+                <a class="text-white" href="#">
+                  Pages
+                </a>
+              </li>
+              <li
+                class="breadcrumb-item text-white active"
+                aria-current="page"
+              >
+                Our Services
+              </li>
+            </ol>
+</nav>*/}
+        </div>
+        <div class="col-lg-6 align-self-end text-center text-lg-end">
+          <img
+            class="img-fluid"
+            src="img/hero-img.png"
+            alt=""
+            style={{ maxHeight: "300px" }}
+          />
+        </div>
+      </div>
+    </div>
+  </div>
     <Section ref={element}>
       <Title value="Contact" />
       <motion.div className="contact"
@@ -18,6 +61,7 @@ const Contact = () => {
       duration: 0.8
       }}
       >
+        
         <div className="contact__title">
           
         </div>
@@ -53,6 +97,7 @@ New Delhi, Delhi 110058
           </div>
         </div>
       </motion.div>
+      <CalltoAction />
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224109.00931036752!2d77.02636465782854!3d28.638654090002596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d04b07d2b04d3%3A0xb11b3a78cfbba168!2sPerfect%20Dry%20Cleaner%20(The%20Drycleaning%20Store)!5e0!3m2!1sen!2sin!4v1702048335853!5m2!1sen!2sin"
         width="100%"
@@ -64,6 +109,7 @@ New Delhi, Delhi 110058
       ></iframe>
     
     </Section>
+    </>
   )
 }
 
@@ -192,4 +238,4 @@ min-height: 100vh;
 `;
 
 
-export default Contact
+export default ContactUs;

@@ -12,7 +12,7 @@ import shop from '../assets/banner1.jpg'
 
 
 
-function Aboutdrycleaning() {
+function AboutIroning() {
   const controls = useAnimation();
   const [ref, inView] = useInView();
   const [ref2, inView2] = useInView();
@@ -54,7 +54,6 @@ function Aboutdrycleaning() {
 
   return (
     <Section id="aboutUs">
-     
       <div className="about-us">
         <motion.div className="content">
           <motion.div
@@ -75,25 +74,19 @@ function Aboutdrycleaning() {
             variants={slideOutVariants}
             transition={slideInTransition}
           >
-            <h2>Unparalleled Dry Cleaning Excellence</h2>
+            <h2>Effortless Wrinkle-Free Perfection</h2>
             <p>
-              Experience the pinnacle of garment care with our specialized dry
-              cleaning services. At our facility, we go beyond the ordinary,
-              using advanced technology and a keen eye for detail to revitalize
-              your wardrobe. Our gentle yet effective process caters to a wide
-              range of fabrics, from delicate silks to intricate embellishments.
-              Stubborn stains are no match for our expert stain removal
-              techniques. Whether it's your everyday wear or cherished special
-              occasion garments, we handle each item with the utmost care,
-              preserving their integrity and extending their lifespan. Trust us
-              to bring a new level of freshness to your clothes, leaving you
-              with a wardrobe that feels as good as new. Discover the difference
-              of meticulous craftsmanship combined with cutting-edge technology
-              in our dry cleaning services. <br />
-              
-              
-          
-              
+              Embrace the ease of impeccable attire with our expert ironing
+              services. We take the hassle out of maintaining a polished
+              appearance by ensuring your clothes are not just wrinkle-free but
+              also exude a flawless finish. Our skilled team meticulously
+              presses each garment, paying attention to the details that matter.
+              From business shirts to delicate fabrics, experience the
+              convenience of perfectly ironed clothes ready to make a statement.
+              Discover the joy of stepping out in outfits that radiate
+              confidence and sophistication, courtesy of our top-notch ironing
+              services.
+              <br />
             </p>
             <div className="more">
               <motion.a
@@ -101,6 +94,7 @@ function Aboutdrycleaning() {
                 variants={buttonVariants}
                 initial="initial"
                 whileHover="hover"
+                href="https://api.whatsapp.com/send?phone=9899416600"
               >
                 {" "}
                 Schedule a Free Pick-Up
@@ -208,4 +202,4 @@ const Section = styled.section`
   }
 `;
 
-export default Aboutdrycleaning
+export default AboutIroning;

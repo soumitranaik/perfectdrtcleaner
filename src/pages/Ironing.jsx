@@ -9,18 +9,19 @@ import { useEffect } from 'react';
 import AnimatedPage from 'components/AnimatedPage';
 import '../assets/innerstyles.css';
 import {} from 'react-icons'
-import { FaAddressCard, FaBlackTie, FaHatCowboy, FaHatCowboySide, FaTshirt } from 'react-icons/fa';
-import { MdWash } from 'react-icons/md';
-import { BsSuitClub, BsSuitHeart, BsWallet } from 'react-icons/bs';
-import { GiClothes, GiFurShirt, GiLifeJacket, GiPoloShirt, GiShinyPurse, GiShirt, GiSkirt, GiSuits, GiWashingMachine, GiWingedShield } from 'react-icons/gi';
+import { FaAddressCard, FaBlackTie, FaHatCowboy, FaHatCowboySide, FaSteam, FaTshirt } from 'react-icons/fa';
+import { MdIron, MdWash } from 'react-icons/md';
+import { BsCheck2Circle, BsDroplet, BsSpeedometer, BsSteam, BsSuitClub, BsSuitHeart, BsWallet } from 'react-icons/bs';
+import { GiClothes, GiFurShirt, GiLifeJacket, GiPoloShirt, GiShinyPurse, GiShirt, GiSkirt, GiSteamBlast, GiSuits, GiWashingMachine, GiWingedShield } from 'react-icons/gi';
 import Aboutdrycleaning from 'components/Aboutdrycleaning';
 import CalltoAction from 'components/CalltoAction';
+import AboutIroning from 'components/Aboutironing';
 import { buttonVariants } from 'animation';
 
 
 
 
-function DrycleaningServices() {
+function IroningServices() {
   /*const [element, controls] = useScroll();*/
 
   const iconStyle = {
@@ -93,16 +94,17 @@ function DrycleaningServices() {
               >
                 Our Services
               </div>
-              <h1 class="mb-4">
-                Exceptional Dry Cleaning Solutions Tailored for Your Garments
-              </h1>
+              <h1 class="mb-4">Ironing Services Crafted for Your Attire</h1>
               <p class="mb-4">
-                Discover the pinnacle of care for your wardrobe with our
-                specialized dry cleaning services. Our advanced AI-driven
-                solutions ensure precision and quality, leaving your clothes
-                impeccably clean and refreshed. Trust us with your garments, and
-                experience the perfect blend of technology and expertise for a
-                lasting impact on your wardrobe<br /><br />
+                Embark on a journey of unparalleled garment care with our
+                cutting-edge ironing services. Immerse yourself in the epitome
+                of precision and quality as our advanced technology and skilled
+                professionals work harmoniously to breathe new life into your
+                clothing. Entrust us with your attire, and witness the seamless
+                integration of technology and expertise, ensuring your clothes
+                emerge crisp, polished, and rejuvenated. Elevate your wardrobe
+                with our ironing services, offering a lasting touch of
+                sophistication and care.<br/><br/>
               </p>
               <motion.a
                 class="up"
@@ -121,7 +123,7 @@ function DrycleaningServices() {
                     <div class="col-12 wow fadeIn" data-wow-delay="0.1s">
                       <div class="service-item shadow-lg d-flex flex-column justify-content-center text-center rounded">
                         <div>
-                          <MdWash
+                          <MdIron
                             style={{
                               fontSize: "64px",
                               color: "#f8f8f8",
@@ -129,11 +131,12 @@ function DrycleaningServices() {
                             }}
                           />
                         </div>
-                        <h5 class="mb-3">Delicate Fabric Care</h5>
+                        <h5 class="mb-3">Steam Pressing Excellence</h5>
                         <p>
-                          Gentle yet effective, we to cater to delicate fabrics,
-                          ensuring they receive the utmost care and attention,
-                          leaving them looking and feeling as good as new.
+                          Experience the removal of wrinkles and creases as
+                          garments undergo the gentle touch of steam, leaving
+                          them immaculately smooth and ready to make a lasting
+                          impression
                         </p>
                         <a class="btn px-3 mt-auto mx-auto" href="">
                           Read More
@@ -143,16 +146,16 @@ function DrycleaningServices() {
                     <div class="col-12 wow fadeIn" data-wow-delay="0.5s">
                       <div class="service-item shadow-lg d-flex flex-column justify-content-center text-center rounded">
                         <div class="service-icon btn-square">
-                          <GiWashingMachine
+                          <BsDroplet
                             style={{ fontSize: "64px", color: "#f8f8f8" }}
                           />
                         </div>
-                        <h5 class="mb-3">Stain Removal Expertise</h5>
+                        <h5 class="mb-3">Eco-Friendly Ironing</h5>
                         <p>
-                          Our dry cleaning specialists are equipped with
-                          advanced stain removal techniques, targeting even the
-                          toughest marks to restore your garments to their
-                          pristine condition.
+                          Embrace eco-conscious garment care with our
+                          eco-friendly ironing services. Our commitment to
+                          sustainability ensures your clothes receive top-notch
+                          care while minimizing environmental impact
                         </p>
                         <a class="btn px-3 mt-auto mx-auto" href="">
                           Read More
@@ -166,15 +169,16 @@ function DrycleaningServices() {
                     <div class="col-12 wow fadeIn" data-wow-delay="0.3s">
                       <div class="service-item shadow-lg d-flex flex-column justify-content-center text-center rounded">
                         <div class="service-icon btn-square">
-                          <FaBlackTie
+                          <BsCheck2Circle
                             style={{ fontSize: "64px", color: "#f8f8f8" }}
                           />
                         </div>
-                        <h5 class="mb-3">Specialized Suit Cleaning</h5>
+                        <h5 class="mb-3">Quality Assurance</h5>
                         <p>
-                          Our meticulous approach maintains the integrity of
-                          suit fabrics, ensuring they retain their shape, color,
-                          and sophistication.
+                          Each garment undergoes a thorough inspection to ensure
+                          it meets our high standards, leaving you with
+                          perfectly pressed clothes that speak volumes of our
+                          commitment to excellence.
                         </p>
                         <a class="btn px-3 mt-auto mx-auto" href="">
                           Read More
@@ -184,7 +188,7 @@ function DrycleaningServices() {
                     <div class="col-12 wow fadeIn" data-wow-delay="0.7s">
                       <div class="service-item shadow-lg d-flex flex-column justify-content-center text-center rounded">
                         <div class="service-icon btn-square">
-                          <FaHatCowboySide
+                          <BsSpeedometer
                             style={{
                               fontSize: "64px",
                               color: "#f8f8f8",
@@ -192,11 +196,12 @@ function DrycleaningServices() {
                             }}
                           />
                         </div>
-                        <h5 class="mb-3">Luxury Item Revitalization</h5>
+                        <h5 class="mb-3">Fast Turnaround Time</h5>
                         <p>
-                          Our dry cleaning experts employ a meticulous process
-                          to rejuvenate and revitalize, preserving the elegance
-                          and quality of your high-end garments.
+                        We understand the
+                          value of time, and our efficient processes ensure your
+                          garments are ready promptly, so you can always be
+                          dressed for success.
                         </p>
                         <a class="btn px-3 mt-auto mx-auto" href="">
                           Read More
@@ -210,7 +215,7 @@ function DrycleaningServices() {
           </div>
         </div>
       </div>
-      <Aboutdrycleaning />
+      <AboutIroning />
       <div class="container-fluid py-5" style={{ backgroundColor: "#f8f8f8" }}>
         <div class="container py-5">
           <div
@@ -239,7 +244,7 @@ function DrycleaningServices() {
                       aria-expanded="false"
                       aria-controls="collapseOne"
                     >
-                      How does dry cleaning differ from traditional laundry?
+                      How does professional ironing enhance garment appearance?
                     </button>
                   </h2>
                   <div
@@ -249,9 +254,7 @@ function DrycleaningServices() {
                     data-bs-parent="#accordionFAQ1"
                   >
                     <div class="accordion-body">
-                      Dry cleaning uses a solvent instead of water to clean
-                      clothes. It's ideal for delicate fabrics and garments with
-                      intricate details.
+                    Professional ironing ensures a polished look, eliminating wrinkles and creases, so your clothes appear neat and well-maintained.
                     </div>
                   </div>
                 </div>
@@ -265,7 +268,7 @@ function DrycleaningServices() {
                       aria-expanded="false"
                       aria-controls="collapseTwo"
                     >
-                      Are all fabrics suitable for dry cleaning?
+                     What fabrics benefit most from professional ironing services?
                     </button>
                   </h2>
                   <div
@@ -275,9 +278,7 @@ function DrycleaningServices() {
                     data-bs-parent="#accordionFAQ1"
                   >
                     <div class="accordion-body">
-                      Dry cleaning is suitable for a wide range of fabrics,
-                      including silk, wool, and delicate synthetics. However,
-                      some fabrics may have specific care instructions.
+                    Professional ironing is suitable for various fabrics, including cotton, linen, and delicate materials, enhancing their appearance and longevity.
                     </div>
                   </div>
                 </div>
@@ -291,7 +292,7 @@ function DrycleaningServices() {
                       aria-expanded="false"
                       aria-controls="collapseThree"
                     >
-                      How often should I dry clean my clothes?
+                      Is your professional ironing safe for embellished or decorated garments?
                     </button>
                   </h2>
                   <div
@@ -301,9 +302,7 @@ function DrycleaningServices() {
                     data-bs-parent="#accordionFAQ1"
                   >
                     <div class="accordion-body">
-                      The frequency depends on factors like garment type, wear,
-                      and stains. Generally, items like suits and special
-                      occasion wear benefit from occasional dry cleaning.
+                    Yes, our ironing process is gentle and suitable for embellished garments. We take extra care to protect decorations during the ironing process.
                     </div>
                   </div>
                 </div>
@@ -317,7 +316,7 @@ function DrycleaningServices() {
                       aria-expanded="true"
                       aria-controls="collapseFour"
                     >
-                      Can you remove all types of stains?
+                      What's the turnaround time?
                     </button>
                   </h2>
                   <div
@@ -327,10 +326,7 @@ function DrycleaningServices() {
                     data-bs-parent="#accordionFAQ1"
                   >
                     <div class="accordion-body">
-                      Our experts use advanced stain removal techniques, but
-                      success depends on the stain type, fabric, and how quickly
-                      it's treated. Some stubborn stains may require special
-                      attention.
+                    Turnaround times vary depending on the item and service. We strive to provide prompt service, and our team can provide specific timelines based on your needs.
                     </div>
                   </div>
                 </div>
@@ -348,8 +344,7 @@ function DrycleaningServices() {
                       aria-expanded="false"
                       aria-controls="collapseFive"
                     >
-                      Is dry cleaning safe for embellished or decorated
-                      garments?
+                      Can I trust your ironing services with valuable or sentimental items?
                     </button>
                   </h2>
                   <div
@@ -359,9 +354,7 @@ function DrycleaningServices() {
                     data-bs-parent="#accordionFAQ2"
                   >
                     <div class="accordion-body">
-                      Yes, our dry cleaning process is gentle and suitable for
-                      embellished garments. We take extra care to protect
-                      decorations during the cleaning process.
+                    Absolutely. Our experienced team understands the importance of sentimental and valuable items. We take every precaution to ensure the safe and meticulous ironing of such garments.
                     </div>
                   </div>
                 </div>
@@ -375,7 +368,7 @@ function DrycleaningServices() {
                       aria-expanded="false"
                       aria-controls="collapseSix"
                     >
-                      What's the turnaround time for dry cleaning services?
+                      Do you offer specialized ironing for suits and formal wear?
                     </button>
                   </h2>
                   <div
@@ -385,9 +378,7 @@ function DrycleaningServices() {
                     data-bs-parent="#accordionFAQ2"
                   >
                     <div class="accordion-body">
-                      Turnaround times vary depending on the item and service.
-                      We strive to provide prompt service, and our team can
-                      provide specific timelines based on your needs.
+                    Yes, our meticulous ironing approach maintains the integrity of suit fabrics, ensuring they retain their shape, color, and sophistication.
                     </div>
                   </div>
                 </div>
@@ -401,8 +392,7 @@ function DrycleaningServices() {
                       aria-expanded="false"
                       aria-controls="collapseSeven"
                     >
-                      Can I trust your dry cleaning services with valuable or
-                      sentimental items?
+                      How can I manage ironing expenses on a strict budget?
                     </button>
                   </h2>
                   <div
@@ -412,10 +402,7 @@ function DrycleaningServices() {
                     data-bs-parent="#accordionFAQ2"
                   >
                     <div class="accordion-body">
-                      Absolutely. Our experienced team understands the
-                      importance of sentimental and valuable items. We take
-                      every precaution to ensure the safe and meticulous
-                      cleaning of such garments.
+                    Visit our store for budget-friendly solutions! Prioritize essentials, bundle services, and explore DIY options. We're here to help you maintain a stylish wardrobe without breaking the bank.
                     </div>
                   </div>
                 </div>
@@ -429,7 +416,7 @@ function DrycleaningServices() {
                       aria-expanded="false"
                       aria-controls="collapseEight"
                     >
-                      How can I manage dry cleaning expenses on a strict budget?
+                      Why choose professional ironing over home ironing methods?
                     </button>
                   </h2>
                   <div
@@ -439,10 +426,7 @@ function DrycleaningServices() {
                     data-bs-parent="#accordionFAQ2"
                   >
                     <div class="accordion-body">
-                      Visit our store for budget-friendly solutions! Prioritize
-                      essentials, bundle services, and explore DIY options.
-                      We're here to help you maintain a stylish wardrobe without
-                      breaking the bank.
+                    Professional ironing ensures consistent quality, utilizing advanced techniques and equipment for superior results. It saves you time and effort, providing a convenient solution for well-maintained clothes.
                     </div>
                   </div>
                 </div>
@@ -526,4 +510,4 @@ min-height: 100vh;
       }
 `;
 
-export default DrycleaningServices;
+export default IroningServices;

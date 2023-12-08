@@ -4,6 +4,26 @@
     background-size: cover;
 }
 
+.about-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.about-features{
+    background-color: #031d27;
+    padding-right: 6rem;
+    padding-left: 6rem;
+}
+.about-img::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+   /*background: url(../assets/bag.jpg) top left no-repeat;*/
+    background-size: contain;
+}
 .hero-header .breadcrumb-item+.breadcrumb-item::before {
     color: var(--light);
 }
@@ -11,7 +31,7 @@
 .service-item {
     position: relative;
     padding: 45px 30px;
-    background: #000000;
+    background: #031d27;
     color: #f8f8f8;
     transition: .5s;
 }
@@ -31,6 +51,22 @@
 
 .services-boxes{
     background-color: #f8f8f8;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+.up{
+    
+          
+        background: #00c0de;
+        border: none;
+        color: #fff;
+        font: inherit;
+        line-height: 1;
+        margin-top: 1em;
+        padding: 1em 2em;
+        text-decoration: none;
+    
+    
 }
 .service-item .service-icon {
     margin: 0 auto 20px auto;
@@ -64,7 +100,7 @@
 }
 
 .service-item:hover a.btn {
-    color: var(--secondary-color);
+    color: #ffffff;
 }
 
 .service-item a.btn::before {

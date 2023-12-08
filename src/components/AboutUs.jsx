@@ -8,11 +8,11 @@ import { useInView } from 'react-intersection-observer';
 import { useEffect } from 'react';
 import { FaCar, FaCheck, FaClock } from 'react-icons/fa';
 import { BsClock, BsTruck } from 'react-icons/bs';
-import shop from '../assets/banner1.jpg'
+import shop from '../assets/shop.jpg'
 
 
 
-function Aboutdrycleaning() {
+function AboutUs() {
   const controls = useAnimation();
   const [ref, inView] = useInView();
   const [ref2, inView2] = useInView();
@@ -75,7 +75,7 @@ function Aboutdrycleaning() {
             variants={slideOutVariants}
             transition={slideInTransition}
           >
-            <h2>Unparalleled Dry Cleaning Excellence</h2>
+            <h2>About Us</h2>
             <p>
               Experience the pinnacle of garment care with our specialized dry
               cleaning services. At our facility, we go beyond the ordinary,
@@ -208,4 +208,4 @@ const Section = styled.section`
   }
 `;
 
-export default Aboutdrycleaning
+export default AboutUs;
