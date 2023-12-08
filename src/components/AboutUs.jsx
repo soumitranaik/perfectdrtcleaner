@@ -101,6 +101,7 @@ function AboutUs() {
                 variants={buttonVariants}
                 initial="initial"
                 whileHover="hover"
+                href="https://api.whatsapp.com/send?phone=9899416600"
               >
                 {" "}
                 Schedule a Free Pick-Up

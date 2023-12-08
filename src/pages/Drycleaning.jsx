@@ -110,6 +110,7 @@ function DrycleaningServices() {
                 initial="initial"
                 whileHover="hover"
                 style={{color:'#fff', marginTop:'6rem' }}
+                href="https://api.whatsapp.com/send?phone=9899416600"
               >
                 Book Now
               </motion.a>
@@ -154,7 +155,7 @@ function DrycleaningServices() {
                           toughest marks to restore your garments to their
                           pristine condition.
                         </p>
-                        <a class="btn px-3 mt-auto mx-auto" href="">
+                        <a class="btn px-3 mt-auto mx-auto" href="https://api.whatsapp.com/send?phone=9899416600">
                           Read More
                         </a>
                       </div>

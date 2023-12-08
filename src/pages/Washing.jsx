@@ -115,6 +115,7 @@ function Washing() {
                 initial="initial"
                 whileHover="hover"
                 style={{ color: "#fff", marginTop: "6rem" }}
+                href="https://api.whatsapp.com/send?phone=9899416600"
               >
                 Book Now
               </motion.a>
