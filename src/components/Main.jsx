@@ -18,21 +18,24 @@ import Work from './Work';
 import CalltoAction from './CalltoAction';
 import Offer from './Offer';
 import Slider from './Slider';
+import Instagram from './Instagram';
 
 export const Main = () => {
   return (
     <>  
         <Home />
         <Services />
-        
-        <Portfolio />
+        <Features />
+        {/*<Portfolio />*/}
         <About />
         
-        <Features />
+        
         
         <Offer />
-        <Reviews />
+        <Instagram />
+        
         <Work />
+        <Reviews />
         <CalltoAction />
         
         <Contact />
