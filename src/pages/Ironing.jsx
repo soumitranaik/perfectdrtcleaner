@@ -49,7 +49,7 @@ function IroningServices() {
                 class="display-4 text-white mb-4 animated slideInRight"
                 style={{ fontWeight: "600", textTransform: "uppercase" }}
               >
-                Dry Cleaning
+                Ironing
               </h1>
               {/*<nav aria-label="breadcrumb">
                 <ol class="breadcrumb justify-content-center justify-content-lg-start mb-0">
