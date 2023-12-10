@@ -52,7 +52,12 @@ function About() {
   }, [controls, inView]);
 
   return (
-    <Section id="aboutUs">
+    <motion.div 
+    initial={{ opacity:0 }}
+    animate={{ opacity:1 }}
+    exit={{ opacity:0 }}
+    >
+    <Section id="aboutUs" >
       <Title value="about us" />
       <div className="about-us">
         <motion.div className="content">
@@ -97,6 +102,7 @@ function About() {
         </motion.div>
       </div>
     </Section>
+    </motion.div>
   );
 }
 

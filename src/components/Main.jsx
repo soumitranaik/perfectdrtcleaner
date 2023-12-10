@@ -19,6 +19,7 @@ import CalltoAction from './CalltoAction';
 import Offer from './Offer';
 import Slider from './Slider';
 import Instagram from './Instagram';
+import transition from 'transition';
 
 export const Main = () => {
   return (
