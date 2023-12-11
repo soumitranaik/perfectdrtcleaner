@@ -52,56 +52,83 @@ function About() {
   }, [controls, inView]);
 
   return (
-    <motion.div 
-    initial={{ opacity:0 }}
-    animate={{ opacity:1 }}
-    exit={{ opacity:0 }}
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
     >
-    <Section id="aboutUs" >
-      <Title value="about us" />
-      <div className="about-us">
-        <motion.div className="content">
-          <motion.div
-            className="image"
-            ref={ref}
-            initial="hidden"
-            animate={controls}
-            variants={slideInVariants}
-            transition={slideInTransition}
-          >
-            <img src={shop} alt="About Us" />
+      <Section id="aboutUs">
+        <Title value="about us" />
+        <div className="about-us">
+          <motion.div className="content">
+            <motion.div
+              className="image"
+              ref={ref}
+              initial="hidden"
+              animate={controls}
+              variants={slideInVariants}
+              transition={slideInTransition}
+            >
+              <img src={shop} alt="About Us" />
+            </motion.div>
+            <motion.div
+              className="text"
+              ref={ref2}
+              initial="hidden"
+              animate={controls}
+              variants={slideOutVariants}
+              transition={slideInTransition}
+            >
+              <h2>We Clean, You Should Relax</h2>
+              <p>
+                'We Clean, You Should Relax' is not just a slogan; it's a
+                promise. Since 1981, our dedicated professionals specialize in
+                intricate cleaning, from carpets to wedding dresses. Our team of
+                dedicated professionals specializes in the intricate cleaning of
+                carpets, sofas, curtains, designer dresses, and wedding dresses.
+                When you choose us, you're not just opting for a cleaning
+                service; you're trusting us with your most cherished items, and
+                we take that responsibility seriously. What sets us apart is our
+                unwavering dedication to providing the best service possible.{" "}
+                <br />
+                <br />
+                <p style={{ display: "inline-flex", alignItems: "center" }}>
+                  <BsTruck
+                    style={{
+                      fontSize: "32",
+                      color: "#00c0de",
+                      marginRight: "2rem",
+                    }}
+                  />{" "}
+                  Free Home Delivery
+                </p>
+                <br></br>
+                <p style={{ display: "inline-flex", alignItems: "center" }}>
+                  <BsClock
+                    style={{
+                      fontSize: "32",
+                      color: "#00c0de",
+                      marginRight: "2rem",
+                    }}
+                  />{" "}
+                  24 X 7 Service
+                </p>
+              </p>
+              <div className="more">
+                <motion.button
+                  class="up"
+                  variants={buttonVariants}
+                  initial="initial"
+                  whileHover="hover"
+                >
+                  {" "}
+                  Schedule a Free Pick-Up
+                </motion.button>
+              </div>
+            </motion.div>
           </motion.div>
-          <motion.div
-            className="text"
-            ref={ref2}
-            initial="hidden"
-            animate={controls}
-            variants={slideOutVariants}
-            transition={slideInTransition}
-          >
-            <h2>Perfect Dry Cleaner: We Clean, You Should Relax</h2>
-            <p>
-              'We Clean, You Should Relax' is not just a slogan; it's a promise.
-              Our team of dedicated professionals specializes in the intricate
-              cleaning of carpets, sofas, curtains, designer dresses, and
-              wedding dresses. When you choose us, you're not just opting for a
-              cleaning service; you're trusting us with your most cherished
-              items, and we take that responsibility seriously. What sets us
-              apart is our unwavering dedication to providing the best service
-              possible. <br /><br />
-              <p style={{display:'inline-flex', alignItems:'center'}}><BsTruck style={{fontSize:'32', color:'#00c0de', marginRight:'2rem'}} /> Free Home Delivery</p><br></br>
-              <p style={{display:'inline-flex', alignItems:'center'}}><BsClock style={{fontSize:'32', color:'#00c0de', marginRight:'2rem'}} /> 24 X 7 Service</p>
-            </p>
-            <div className="more">
-              
-              <motion.button class="up" variants={buttonVariants}
-      initial="initial"
-      whileHover="hover"> Schedule a Free Pick-Up</motion.button>
-            </div>
-          </motion.div>
-        </motion.div>
-      </div>
-    </Section>
+        </div>
+      </Section>
     </motion.div>
   );
 }
