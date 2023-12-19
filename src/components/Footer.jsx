@@ -28,7 +28,7 @@ function Footer() {
          }}
       >
         <a href="https://www.facebook.com/perfectdrycleaningstore/" style={{color:'#fff', fontSize:'24px'}}><BsFacebook /></a>
-        <a href="#" style={{color:'#fff', fontSize:'24px'}}><BsInstagram /></a>
+        <a href="https://www.instagram.com/perfectdrycleaner/" style={{color:'#fff', fontSize:'24px'}}><BsInstagram /></a>
         
         
       </motion.div>
