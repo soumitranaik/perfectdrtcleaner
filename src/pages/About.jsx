@@ -141,7 +141,7 @@ function About() {
                     />
                     <div class="ms-3">
                       <h2 class="text-white mb-0" data-toggle="counter-up">
-                        1000+
+                        5000+
                       </h2>
                       <p class="text-white mb-0">Happy Clients</p>
                     </div>
@@ -155,7 +155,7 @@ function About() {
                     <BsGoogle style={{ color: "#fff", fontSize: "64px" }} />
                     <div class="ms-3">
                       <h2 class="text-white mb-0" data-toggle="counter-up">
-                        300+{" "}
+                        400+{" "}
                       </h2>
                       <p class="text-white mb-0">5 Star Google Ratings</p>
                     </div>

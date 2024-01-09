@@ -46,9 +46,9 @@ function Services() {
           <div className="col">
             <strong>Address</strong>
             <p>
-              No 13/ 8, DDA Shopping Centre,
+              21/10&11 chotti Subzi Mandi
               <br />
-              Chhoti Subji Mandi, Janakpuri,
+               Janak Puri
               <br />
               New Delhi, Delhi 110058
             </p>
