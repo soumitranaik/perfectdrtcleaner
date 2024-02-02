@@ -8,6 +8,7 @@ import { navAnimation } from 'animation';
 import { motion } from 'framer-motion';
 import { FaHamburger, FaWhatsapp, FaWhatsappSquare } from 'react-icons/fa';
 import { BsWhatsapp } from 'react-icons/bs';
+import Marquee from "react-fast-marquee";
 
 
 function Navbar() {
@@ -22,9 +23,15 @@ function Navbar() {
       animate={controls}
       state={isNavOpen ? 1 : 0}
     >
+      
+     
       <div className="brand__container">
+      <Marquee>
+        I can be a React component, multiple React components, or just some
+        text.
+      </Marquee>
         <a href="#" className="brand">
-          <img className="logoimg" src={logo} alt="logo" />
+          <img className="logoimg" src={logo} alt="logo" />aaa
         </a>
         <div className="toggle">
           {isNavOpen ? (
